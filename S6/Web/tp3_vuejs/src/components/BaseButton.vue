@@ -9,6 +9,11 @@
 const props = defineProps({
   disabled: { type: Boolean, default: false },
   type:     { type: String,  default: 'button' },
+  color:   { type: String,  default: 'primary',
+    validator: (value) => {
+      return ['primary', 'warn', 'danger'].includes(value)
+    },
+  },
 })
 
 const classes = [

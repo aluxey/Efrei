@@ -6,7 +6,6 @@ import BaseFooter from './BaseFooter.vue'
 <template>
   <div class="app-shell">
     <BaseHeader />
-    <!-- Default slot for page content -->
     <slot />
     <BaseFooter />
   </div>
